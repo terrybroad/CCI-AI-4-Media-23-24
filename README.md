@@ -13,5 +13,9 @@ Then in run this (from the main folder for this repository).
 
 `pip install -r requirements.txt`
 
+If you are having import errors in one of the notebooks, create a new cell and run the command:
+
+`!pip install -r ../requirements.txt`
+
 
 **If you have an NVIDIA GPU**, you may want to install the CUDA version of pytorch for you machine. Uninstall pytorch (`pip uninstall torch torchvision torchaudio torchtext`) and then install the CUDA version for your machine by following the [install guide on the pytorch website homepage](https://pytorch.org/#:~:text=Aid%20to%20Ukraine.-,INSTALL%20PYTORCH,-Select%20your%20preferences). You may also need to [install CUDA](https://developer.nvidia.com/cuda-downloads). 

@@ -22,3 +22,5 @@ librosa
 gdown
 gallery-dl
 ultralytics
+scikit-learn
+scikit-image
