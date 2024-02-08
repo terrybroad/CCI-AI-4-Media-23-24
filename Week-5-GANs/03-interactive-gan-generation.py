@@ -10,16 +10,18 @@ from src.util import clamp, create_latent_interp
 from src.gan_model import Generator
 
 #####################################
-# This code shows you how to interactively control GAN generation with a mouse input 
+#  This code shows you how to interactively control GAN generation with a mouse input 
 # 
-# Work through the code and then see if you can extend this code in a fun way.
-# For instance you could:
+#  Work through the code and then see if you can extend this code in a fun way.
+# 
+#
+#   Possible tasks:
 #  - Use the mouse Y position to control a different aspect of generation
 #  - Use camera input from YOLO to as the input to control the generation
 #  - Modulate the latent variables to FFT feature to create an audioreactive animation
-#  - Can you think of anything else to do here?
+#  - Can you generate multiple different images at the same time?
 # 
-# Look at the examples in Louis' Dorothy library (or last terms STEM notebooks) for more inspiration: https://github.com/Louismac/dorothy/tree/main/examples
+#  Look at the examples in Louis' Dorothy library (or last terms STEM notebooks) for more inspiration: https://github.com/Louismac/dorothy/tree/main/examples
 #####################################
 
 image_size = 32 
