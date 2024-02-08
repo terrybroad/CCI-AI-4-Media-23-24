@@ -145,6 +145,8 @@ dmypy.json
 *.gif
 *.wav
 *.zip
+*.webp
+*.bmp
 
 # PyTorch files
 *.pt
@@ -160,3 +162,4 @@ dmypy.json
 
 # Examples for class
 !Week-1-Intro-to-AI/test_doggos/ceecee.jpg
+!Week-5-GANs/gan_weights_mnist_1000_epochs.pt
