@@ -6,11 +6,12 @@ import torch.nn.functional as F
 ## Search the pytorch reference for classes you have not seen before:
 ## https://pytorch.org/docs/stable/index.html
 
-#  Object for the Generator class
+#  Here we define the generator class
 #  The generator is nearly a symmetrical network to the discriminator
 #  It takes a small input (latent vector z) and expands it up to an image with transposed convolutional layers
 class Generator(nn.Module):
     # Constructor for the class
+    # This gets called when a new instance of this class is instatiated
     def __init__(self, z_dim, n_f_maps, num_channels):
         # Call the constructor of the base class nn.module
         super(Generator, self).__init__()
@@ -50,7 +51,7 @@ class Generator(nn.Module):
         # output generated image
         return x
 
-#  Object for the Discriminator class
+#  Here we define the Discriminator class
 #  The disciminator is a binary classifier (Fake vs Real)
 #  This model is very similiar to the code in Week 3 for image classification
 class Discriminator(nn.Module):
