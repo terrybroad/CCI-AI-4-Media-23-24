@@ -24,3 +24,6 @@ gallery-dl
 ultralytics
 scikit-learn
 scikit-image
+acids-ircam
+wget
+pydantic
