@@ -147,14 +147,18 @@ dmypy.json
 *.zip
 *.webp
 *.bmp
+*.tar.gz
+LICENSE
 
 # PyTorch files
 *.pt
 *.vec
+*.ts
 
 # Media
 !media/*.png
 !media/*.jpg
+!media/*/*.wav
 
 # Core files
 !requirements.txt
