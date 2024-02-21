@@ -95,8 +95,8 @@ class RAVEPlayer(AudioDevice):
         torch.set_float32_matmul_precision('high')
         self.device = torch.device('cpu')
 
-        self.frame_size = 4096 #This is the RAVE buffer size 
-        
+        self.frame_size = 4096//2 #This is the RAVE buffer size 
+
         self.ptr = 0
         self.latent_dim = latent_dim
         self.current_latent = torch.randn(1, self.latent_dim, 1).to(self.device)
@@ -119,7 +119,7 @@ class RAVEPlayer(AudioDevice):
             noise = torch.randn_like(z) * 0.05 # Add small amount of noise to randomly shift z each frame
             y = self.model.decode(z+noise)
             y = y.reshape(-1).to(self.device).numpy()
-        return y
+        return y[:self.frame_size]
 
     def audio_callback(self):
         if self.pause_event.is_set():
