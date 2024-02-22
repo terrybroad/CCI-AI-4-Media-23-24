@@ -155,10 +155,20 @@ LICENSE
 *.vec
 *.ts
 
+# Binaries
+*.pkl
+*.bin
+
+# Config files
+*.yaml
+!Week-7-Transformers/configs/*.yaml
+
 # Media
 !media/*.png
 !media/*.jpg
-!media/*/*.wav
+!media/sounds/*.wav
+!media/texts/*.txt
+
 
 # Core files
 !requirements.txt
