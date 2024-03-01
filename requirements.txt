@@ -27,3 +27,4 @@ scikit-image
 acids-ircam
 wget
 pydantic
+open_clip_torch
