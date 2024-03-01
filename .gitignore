@@ -165,6 +165,8 @@ LICENSE
 
 # Media
 !media/*.png
+!media/*/*.png
+!media/*/*.jpg
 !media/*.jpg
 !media/sounds/*.wav
 !media/texts/*.txt
